@@ -174,15 +174,6 @@
       color: #c2185b;
     }
 
-    .love-image {
-      width: 250px;
-      height: 250px;
-      border-radius: 20px;
-      object-fit: cover;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      border: 4px solid white;
-    }
-
     .extra-text {
       font-size: 1.1rem;
       color: #ad1457;
@@ -244,11 +235,9 @@
         Yaaay, you make me so happy!
         <span class="highlight">I love you babe!</span>
       </p>
-      <img
-        class="love-image"
-        src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500&h=500&fit=crop"
-        alt="Love"
-      />
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@igiam_oficial/video/7366744521385708832" data-video-id="7366744521385708832" style="max-width:320px;min-width:280px;margin:0 auto;">
+        <section></section>
+      </blockquote>
       <p class="extra-text">Happy Valentine's Day &#x1F49E;</p>
     </div>
   </div>
@@ -346,6 +335,12 @@
       btnNo.style.position = '';
       btnNo.style.left = '';
       btnNo.style.top = '';
+
+      // Load TikTok embed script
+      var s = document.createElement('script');
+      s.src = 'https://www.tiktok.com/embed.js';
+      s.async = true;
+      document.body.appendChild(s);
 
       launchConfetti();
     });
